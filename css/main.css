@@ -1,0 +1,30 @@
+body {
+  margin: 0; }
+
+nav ul {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: sans-serif;
+  background-color: #aac4dd; }
+
+nav {
+  background-color: #47a; }
+  nav ul {
+    list-style-type: none; }
+  nav a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 0.5em 2em;
+    display: inline-block; }
+    nav a:hover {
+      background-color: #355e86; }
+
+aside {
+  background-color: #aac4dd; }
+
+footer {
+  background-color: #47a; }
+
+/*# sourceMappingURL=main.css.map */

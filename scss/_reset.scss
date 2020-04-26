@@ -1,0 +1,13 @@
+//Dit document is een partial
+//Dat betekend dat dit document geen eigen css bestand moet aanmaken
+//omdat het wordt geïmporteerd in een ander scss bestand
+//soruce: https://sass-lang.com/guide
+
+//declaratie van meerdere kleuren
+$hoofdkleur: #47a;
+                              //10% lichter dan dat origineel
+$lichter: lighten($hoofdkleur,30%);
+                              //10% meer donker dan origineel
+$donkerder: darken($hoofdkleur,10%);
+
+$paddingRuimte: 1em; 

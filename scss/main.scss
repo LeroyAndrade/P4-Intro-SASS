@@ -1,0 +1,35 @@
+//import variabelen
+@import 'vars';
+@import 'reset';
+
+
+body{
+    font-family: sans-serif;
+    background-color: $lichter;
+}
+
+nav{
+    background-color: $hoofdkleur;
+    ul{
+        list-style-type: none;
+    }        
+    
+    a{
+        text-decoration:none; color:#FFF;
+        //1em /2 =8px verticaal Top-down -- horizontaal 16px*2 =32px Left-Right
+        padding:$paddingRuimte/2 $paddingRuimte*2; 
+        display:inline-block;
+            &:hover
+            {
+            background-color: $donkerder;
+            }
+    }
+}
+
+aside{
+    background-color: $lichter;
+}
+
+footer{
+background-color: $hoofdkleur;
+}
