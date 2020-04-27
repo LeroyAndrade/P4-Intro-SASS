@@ -1,0 +1,31 @@
+nav
+ background-color: $hoofdkleur
+ padding: 0 10px
+
+ ul
+  list-style-type: $none
+  ///background-color: blue
+
+  a
+   text-decoration: $none
+   color: $oranje
+   //1em /2 =8px verticaal down-Top -- horizontaal 16px*2 =32px Right-Left
+   padding: $paddingRuimte/2 $paddingRuimte*8
+   border: 1px solid black
+   display: inline-block
+   &:hover
+    background: gold
+   &:visited
+    background: $groen
+   &:nth-child(1)
+    background-color: red
+   &:nth-child(2)
+    background-color: #fff
+   &:nth-child(3)
+    background-color: blue
+   &:nth-child(1n+0):hover
+    background-color: rgb(255,154,0)
+    color: #000
+
+p
+ color: green

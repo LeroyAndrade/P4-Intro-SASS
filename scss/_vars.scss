@@ -1,4 +1,4 @@
-//Dit document is een partial
+//Dit document is een _partial
 //Dat betekend dat dit document geen eigen css bestand moet aanmaken
 //omdat het wordt geïmporteerd in een ander scss bestand
 //soruce: https://sass-lang.com/guide
@@ -6,10 +6,10 @@
 //declaratie van meerdere kleuren
 $waarde0:0;
 body{
-    margin:$waarde0;
+    margin: $waarde0;
 }
 
 nav ul{
-    margin:$waarde0;
-    padding:$waarde0;
+    margin: $waarde0;
+    padding: $waarde0;
 }

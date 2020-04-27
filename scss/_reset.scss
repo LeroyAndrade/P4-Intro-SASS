@@ -1,4 +1,4 @@
-//Dit document is een partial
+//Dit document is een _partial
 //Dat betekend dat dit document geen eigen css bestand moet aanmaken
 //omdat het wordt geïmporteerd in een ander scss bestand
 //soruce: https://sass-lang.com/guide
@@ -11,3 +11,6 @@ $lichter: lighten($hoofdkleur,30%);
 $donkerder: darken($hoofdkleur,10%);
 
 $paddingRuimte: 1em; 
+$none: none;
+$groen: green;
+$oranje: rgb(255,154,0);
