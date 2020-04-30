@@ -1,0 +1,20 @@
+/*Mixins: grid template columns*/
+
+/*
+@mixin grid-template-columns($value, $value1, $value2){
+ -webkit-grid-template-columns: $value, $value1, $value2;
+    -moz-grid-template-columns: $value, $value1, $value2;
+     -ms-grid-template-columns: $value, $value1, $value2;
+      -o-grid-template-columns: $value, $value1, $value2;
+         grid-template-columns: $value, $value1, $value2;
+}
+
+*/
+
+    @mixin grid-template-columns($value){
+     -webkit-grid-template-columns: $value;
+        -moz-grid-template-columns: $value;
+         -ms-grid-template-columns: $value;
+          -o-grid-template-columns: $value;
+             grid-template-columns: $value;
+    }

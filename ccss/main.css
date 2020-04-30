@@ -5,32 +5,17 @@ nav ul {
   margin: 0;
   padding: 0; }
 
-/*Mixins: grid template columns*/
-/*
-@mixin grid-template-columns($value, $value1, $value2){
- -webkit-grid-template-columns: $value, $value1, $value2;
-    -moz-grid-template-columns: $value, $value1, $value2;
-     -ms-grid-template-columns: $value, $value1, $value2;
-      -o-grid-template-columns: $value, $value1, $value2;
-         grid-template-columns: $value, $value1, $value2;
-}
-
-*/
-* {
-  margin: 0; }
-
 nav {
-  background-color: green; }
+  background-color: #47a;
+  padding: 0 10px; }
   nav ul {
-    display: grid;
-    list-style-type: none;
-    grid-template-columns: 1fr; }
+    list-style-type: none; }
     nav ul a {
       text-decoration: none;
       color: #ff9a00;
+      padding: 0.5em 8em;
       border: 1px solid black;
-      display: inline-block;
-      text-align: center; }
+      display: inline-block; }
       nav ul a:hover {
         background: gold; }
       nav ul a:visited {
@@ -41,9 +26,9 @@ nav {
         background-color: #fff; }
       nav ul a:nth-child(3) {
         background-color: blue; }
-      nav ul a:nth-child(1n):hover {
+      nav ul a:nth-child(1n+0):hover {
         background-color: #ff9a00;
-        color: black; }
+        color: #000; }
 
 p {
   color: green; }
