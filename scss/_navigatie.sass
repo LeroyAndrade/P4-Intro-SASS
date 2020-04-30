@@ -1,16 +1,15 @@
 *
  margin: $waarde0
  ///Becommentarieer regel #4 om @media te debuggen
- ///padding: 0
+ padding: 0
 
 nav 
  ///#{$background-color}: $hoofdkleur
- #{$background-color}: $gold
  
  ul
   #{$display}: grid
   list-style-type: $none
-  ///background-color: $blauw
+  background-color: $blauw
   ///grid-template-columns: repeat(3, autofil)
 
   a
@@ -45,40 +44,39 @@ nav
    #{$nthchild}#{$waarde1}n):#{$hover}
     #{$background-color}: rgb(255,154,$waarde0)
     #{color}: $waarde000
-
-
-
+   
+   a span 
+    @extend a
+    font-size: .5em
+   color: $gold
+   background-color: green
+    
 p
  color: $groen
 
 ///Wanneer in de volgende @media's -> $width /$center wordt geplaatst, herkent de mediaQuery de code niet
 /*Iexplore 8 tot en met 10*/
 @media screen and (min-width:0\0)
- nav
-  #{background-color}: $gold
-  ul
-   a 
-    #{$text-align}: #{$center}
-    #{$width}: #{$waarde100}
+nav
+ #{background-color}: brown
+ ul
+  a 
+   #{$text-align}: #{$center}
+   #{$width}: #{$waarde100}
 
-/*Safari 7.1+*/    
-_::-webkit-full-page-media, _:future, :root .safari_only
+/*Safari*/    
+@media (-webkit-min-device-pixel-ratio: 2)
  nav
-  #{background-color}: orange
+  #{background-color}: green
   ul
+   #{$background-color}: green
    a
     #{$text-align}: #{$center}
     #{$width}: #{$waarde100}
      
-///850px   = 841 want de desktop nav heeft een waarde van 9
 @media only screen and (max-width: 600px)
  nav
-  $background-color: $blauw
   ul
-   +grid-template-columns(repeat(3, 1fr))
-   a
-     $text-align: $center
-
-///Opdracht 9
-@media only screen and (min-width: 650px)
+   background-color: pink
+   +grid-templat-columns(repeat(3, 1fr))
  @import "naviTablet"

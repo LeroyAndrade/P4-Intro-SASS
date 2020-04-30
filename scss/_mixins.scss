@@ -9,7 +9,7 @@
          grid-template-columns: $value, $value1, $value2;
 }
 */
-@mixin grid-template-columns($value){
+@mixin grid-templat-columns($value){
         -webkit-#{$gridtcol}: $value;
            -moz-#{$gridtcol}: $value;
             -ms-#{$gridtcol}: $value;

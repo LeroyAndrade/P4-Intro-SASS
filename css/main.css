@@ -9,84 +9,67 @@
 }
 */
 * {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
-nav {
-  background-color: gold; }
-  nav ul {
-    display: grid;
-    list-style-type: none; }
-    nav ul a {
-      text-decoration: none;
-      color: #ff9a00;
-      font-size: 3em;
-      border: 1px solid black;
-      display: inline-block; }
-      nav ul a:hover {
-        background: gold; }
-      nav ul a:visited {
-        background: green; }
-      nav ul a:nth-child(1) {
-        background-color: red; }
-      nav ul a:nth-child(2) {
-        background-color: #fff; }
-      nav ul a:nth-child(3) {
-        background-color: blue; }
-      nav ul a:nth-child(1n):hover {
-        background-color: #ff9a00;
-        color: black; }
+nav ul {
+  display: grid;
+  list-style-type: none;
+  background-color: blue; }
+  nav ul a, nav ul a a span {
+    text-decoration: none;
+    color: #ff9a00;
+    font-size: 3em;
+    border: 1px solid black;
+    display: inline-block;
+    color: gold;
+    background-color: green; }
+    nav ul a:hover, nav ul a a span:hover {
+      background: gold; }
+    nav ul a:visited, nav ul a a span:visited {
+      background: green; }
+    nav ul a:nth-child(1), nav ul a a span:nth-child(1) {
+      background-color: red; }
+    nav ul a:nth-child(2), nav ul a a span:nth-child(2) {
+      background-color: #fff; }
+    nav ul a:nth-child(3), nav ul a a span:nth-child(3) {
+      background-color: blue; }
+    nav ul a:nth-child(1n):hover, nav ul a a span:nth-child(1n):hover {
+      background-color: #ff9a00;
+      color: black; }
+    nav ul a a span {
+      font-size: 0.5em; }
 
 p {
   color: green; }
 
 /*Iexplore 8 tot en met 10 */
-@media screen and (min-width: 0\0 ) {
-  nav {
-    background-color: gold; }
-    nav ul a {
-      text-align: center;
-      width: 100%; } }
-/*Safari 7.1+ */
-_::-webkit-full-page-media nav, _:future nav, :root .safari_only nav {
-  background-color: orange; }
-  _::-webkit-full-page-media nav ul a, _:future nav ul a, :root .safari_only nav ul a {
+nav {
+  background-color: brown; }
+  nav ul a, nav ul a a span {
     text-align: center;
     width: 100%; }
 
+/*Safari */
+@media (-webkit-min-device-pixel-ratio: 2) {
+  nav {
+    background-color: green; }
+    nav ul {
+      background-color: green; }
+      nav ul a, nav ul a a span {
+        text-align: center;
+        width: 100%; } }
 @media only screen and (max-width: 600px) {
   nav ul {
+    background-color: pink;
     -webkit-grid-template-columns: repeat(3, 1fr);
     -moz-grid-template-columns: repeat(3, 1fr);
     -ms-grid-template-columns: repeat(3, 1fr);
     -o-grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr); } }
-@media only screen and (min-width: 650px) {
-  /*@media only screen and (min-width: 656px){
-  nav{
-      width:100%;
-  }
-  ul{
-   width:100%;
-  }
-   a{
-     $text-align: $center;
-     padding: 1em;
-   }
-  }
-   */ }
-/*@media only screen and (min-width: 656px){
-nav{
-    width:100%;
-}
-ul{
- width:100%;
-}
- a{
-   $text-align: $center;
-   padding: 1em;
- }
-}
- */
+body {
+  background-color: #aac4dd; }
+
 footer {
   background-color: #47a; }
 
