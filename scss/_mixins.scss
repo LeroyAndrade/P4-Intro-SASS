@@ -1,6 +1,6 @@
 /*Mixins: grid template columns*/
 
-/*
+/* getest: werkt niet
 @mixin grid-template-columns($value, $value1, $value2){
  -webkit-grid-template-columns: $value, $value1, $value2;
     -moz-grid-template-columns: $value, $value1, $value2;
@@ -8,13 +8,11 @@
       -o-grid-template-columns: $value, $value1, $value2;
          grid-template-columns: $value, $value1, $value2;
 }
-
 */
-
-    @mixin grid-template-columns($value){
-     -webkit-grid-template-columns: $value;
-        -moz-grid-template-columns: $value;
-         -ms-grid-template-columns: $value;
-          -o-grid-template-columns: $value;
-             grid-template-columns: $value;
-    }
+@mixin grid-template-columns($value){
+        -webkit-#{$gridtcol}: $value;
+           -moz-#{$gridtcol}: $value;
+            -ms-#{$gridtcol}: $value;
+             -o-#{$gridtcol}: $value;
+                #{$gridtcol}: $value;
+}

@@ -1,19 +1,13 @@
 //import variabelen
 @import 'vars';
-@import 'reset';
 @import 'mixins';
 @import 'navigatie';
-
+@import 'naviTablet';
 
 body{
-    font-family: sans-serif;
-    background-color: $lichter;
-}
-
-aside{
-    background-color: $lichter;
+   /// background-color: $lichter;
 }
 
 footer{
-background-color: $hoofdkleur;
+    background-color: $hoofdkleur;
 }

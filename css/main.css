@@ -1,12 +1,5 @@
-body {
-  margin: 0; }
-
-nav ul {
-  margin: 0;
-  padding: 0; }
-
 /*Mixins: grid template columns*/
-/*
+/* getest: werkt niet
 @mixin grid-template-columns($value, $value1, $value2){
  -webkit-grid-template-columns: $value, $value1, $value2;
     -moz-grid-template-columns: $value, $value1, $value2;
@@ -14,23 +7,21 @@ nav ul {
       -o-grid-template-columns: $value, $value1, $value2;
          grid-template-columns: $value, $value1, $value2;
 }
-
 */
 * {
   margin: 0; }
 
 nav {
-  background-color: green; }
+  background-color: gold; }
   nav ul {
     display: grid;
-    list-style-type: none;
-    grid-template-columns: 1fr; }
+    list-style-type: none; }
     nav ul a {
       text-decoration: none;
       color: #ff9a00;
+      font-size: 3em;
       border: 1px solid black;
-      display: inline-block;
-      text-align: center; }
+      display: inline-block; }
       nav ul a:hover {
         background: gold; }
       nav ul a:visited {
@@ -48,13 +39,54 @@ nav {
 p {
   color: green; }
 
-body {
-  font-family: sans-serif;
-  background-color: #aac4dd; }
+/*Iexplore 8 tot en met 10 */
+@media screen and (min-width: 0\0 ) {
+  nav {
+    background-color: gold; }
+    nav ul a {
+      text-align: center;
+      width: 100%; } }
+/*Safari 7.1+ */
+_::-webkit-full-page-media nav, _:future nav, :root .safari_only nav {
+  background-color: orange; }
+  _::-webkit-full-page-media nav ul a, _:future nav ul a, :root .safari_only nav ul a {
+    text-align: center;
+    width: 100%; }
 
-aside {
-  background-color: #aac4dd; }
-
+@media only screen and (max-width: 600px) {
+  nav ul {
+    -webkit-grid-template-columns: repeat(3, 1fr);
+    -moz-grid-template-columns: repeat(3, 1fr);
+    -ms-grid-template-columns: repeat(3, 1fr);
+    -o-grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); } }
+@media only screen and (min-width: 650px) {
+  /*@media only screen and (min-width: 656px){
+  nav{
+      width:100%;
+  }
+  ul{
+   width:100%;
+  }
+   a{
+     $text-align: $center;
+     padding: 1em;
+   }
+  }
+   */ }
+/*@media only screen and (min-width: 656px){
+nav{
+    width:100%;
+}
+ul{
+ width:100%;
+}
+ a{
+   $text-align: $center;
+   padding: 1em;
+ }
+}
+ */
 footer {
   background-color: #47a; }
 

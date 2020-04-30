@@ -3,37 +3,6 @@
 //omdat het wordt geïmporteerd in een ander scss bestand
 //soruce: https://sass-lang.com/guide
 
-//declaratie van meerdere kleuren
-$hoofdkleur:#47a;
-                              //10% lichter dan dat origineel
-$lichter: lighten($hoofdkleur,30%);
-                              //10% meer donker dan origineel
-$donkerder: darken($hoofdkleur,10%);
-$groen:green;
-$oranje:rgb(255,154,0);
-$blauw:blue;
-$zwart:black;
-$background-color:'background-color';
-$background:'background';
+//data verplaatst i.v.m ander layout
+//wel komt deze opdrachten voor in de volgende bestanden: main.scss
 
-$padding:'padding';
-$nthchild:'&:nth-child(';
-
-$waarde0:0;
-$waarde00:00;
-$waarde000:rgb(0,0,0);
-$waarde1:1;
-$waarde2:2;
-$waarde3:3;
-$paddingRuimte:1em; 
-
-$n:'&:';
-$hover:'hover';
-$nhover:'&:hover';
-$display:'display';
-$none:none;
-$color: 'color';
-$px: 'px';
-$fr: fr;
-$c1px: $waarde1+$px;
-$c1fr: $waarde1+$fr;

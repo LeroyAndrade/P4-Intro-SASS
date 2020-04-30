@@ -4,12 +4,44 @@
 //soruce: https://sass-lang.com/guide
 
 //declaratie van meerdere kleuren
-$waarde0:0;
-body{
-    margin: $waarde0;
-}
 
-nav ul{
-    margin: $waarde0;
-    padding: $waarde0;
-}
+$hoofdkleur:#47a;
+//10% lichter dan dat origineel
+$lichter: lighten($hoofdkleur,30%);
+//10% meer donker dan origineel
+$donkerder: darken($hoofdkleur,10%);
+$groen:green;
+$oranje:rgb(255,154,0);
+$gold:gold;
+$blauw:blue;
+$zwart:black;
+$wit:'#fff';
+$background-color:'background-color';
+$background:'background';
+
+$padding:'padding';
+$nthchild:'&:nth-child(';
+
+$waarde0:0;
+$waarde00:00;
+$waarde000:rgb(0,0,0);
+$waarde100:100%;
+$waarde1:1;
+$waarde2:2;
+$waarde3:3;
+$paddingRuimte:1em; 
+
+$n:'&:';
+$hover:'hover';
+$nhover:'&:hover';
+$display:'display';
+$gridtcol:'grid-template-columns';
+$none:none;
+$center:'center';
+$width:'width';
+$color:'color';
+$text-align:'text-align';
+$px:'px';
+$fr:'fr';
+$c1px:$waarde1+$px;
+$c1fr:$waarde1+$fr;
